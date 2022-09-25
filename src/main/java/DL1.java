@@ -15,7 +15,7 @@ class Dl1 {
 
         String transmissionDelayInDecimalToString = formatter.format(transmissionDelayInMilliseconds);
 
-        return transmissionDelayInDecimalToString + " Milliseconds";
+        return transmissionDelayInDecimalToString + " Microseconds";
     }
 
     public static String propagationDelayCalculator(Integer distance, Double propagationSpeed){
@@ -28,17 +28,17 @@ class Dl1 {
 
         String transmissionDelayInDecimalToString = formatter.format(propagationDelayInMilliseconds);
 
-        return transmissionDelayInDecimalToString + " Milliseconds";
+        return transmissionDelayInDecimalToString + " Microseconds";
     }
 
     public static void main(String[] args) {
         /**For the Calculation of Transmission delay:
          * insert the Transmission rate in Mbit/s and packet length in bits**/
-        String transmissionDelay = Dl1.transmissionDelayCalculator(1000, 8000); //
+        String transmissionDelay = Dl1.transmissionDelayCalculator(1000, 1500); //
 
         /**For the Calculation of Propagation delay:
          * insert the Distance in Kilometers and Propagation Speed in Microseconds**/
-        String propagationDelay = Dl1.propagationDelayCalculator(1,1.1);
+        String propagationDelay = Dl1.propagationDelayCalculator(40,0.2);
 
         System.out.println( "Transmission Delay is: " + transmissionDelay);
         System.out.println( "Propagation Delay is: " + propagationDelay);
