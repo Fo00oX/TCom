@@ -15,9 +15,7 @@ public class DelayCalculator {
 
         double transmissionDelayInMilliseconds = transmissionDelay * 10000;
 
-        String transmissionDelayInDecimalToString = formatter.format(transmissionDelayInMilliseconds);
-
-        return transmissionDelayInDecimalToString + " Microseconds";
+        return formatter.format(transmissionDelayInMilliseconds) + " Microseconds";
     }
 
     public static String propagationDelayCalculator(Integer distance, Double propagationSpeed){
@@ -28,8 +26,6 @@ public class DelayCalculator {
 
         double propagationDelayInMilliseconds = propagationDelay * 1000;
 
-        String transmissionDelayInDecimalToString = formatter.format(propagationDelayInMilliseconds);
-
-        return transmissionDelayInDecimalToString + " Microseconds";
+        return formatter.format(propagationDelayInMilliseconds) + " Microseconds";
     }
 }
