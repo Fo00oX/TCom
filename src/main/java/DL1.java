@@ -32,8 +32,12 @@ class Dl1 {
     }
 
     public static void main(String[] args) {
-
+        /**For the Calculation of Transmission delay:
+         * insert the Transmission rate in Mbit/s and packet length in bits**/
         String transmissionDelay = Dl1.transmissionDelayCalculator(1000, 8000); //
+
+        /**For the Calculation of Propagation delay:
+         * insert the Distance in Kilometers and Propagation Speed in Microseconds**/
         String propagationDelay = Dl1.propagationDelayCalculator(1,1.1);
 
         System.out.println( "Transmission Delay is: " + transmissionDelay);
