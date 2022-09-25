@@ -6,11 +6,11 @@ class Dl1 {
     public static void main(String[] args) {
         /**For the Calculation of Transmission delay:
          * insert the Transmission rate in Mbit/s and packet length in bits**/
-        String transmissionDelay = DelayCalculator.transmissionDelayCalculator(10, 1500); //
+        String transmissionDelay = DelayCalculator.transmissionDelayCalculator(100, 8000); //
 
         /**For the Calculation of Propagation delay:
          * insert the Distance in Kilometers and Propagation Speed in Microseconds**/
-        String propagationDelay = DelayCalculator.propagationDelayCalculator(100,0.2);
+        String propagationDelay = DelayCalculator.propagationDelayCalculator(12,0.2);
 
         String differenceBetween = DifferenceInPowerCalculator.differenceInPower(10,15);
 

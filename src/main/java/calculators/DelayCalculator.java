@@ -13,7 +13,7 @@ public class DelayCalculator {
 
         transmissionDelay = packetLengthInBits/(transmissionRate * Math.pow(10, 6));
 
-        double transmissionDelayInMilliseconds = transmissionDelay * 10000;
+        double transmissionDelayInMilliseconds = transmissionDelay * 10000 * 100 ;
 
         return formatter.format(transmissionDelayInMilliseconds) + " Microseconds";
     }
